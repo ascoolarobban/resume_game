@@ -5,9 +5,13 @@ const optionButtonsElement = document.getElementById('option-buttons')
 //SOUND STUFF
 fireAudio = new Audio('fire.wav');
 
+//Show Sword img
+document.getElementById("sword").hidden=true;
 
 
 
+
+//LOOP SOUND
 if (typeof fireAudio.loop == 'boolean')
 {
     fireAudio.loop = true;
@@ -20,7 +24,7 @@ else
     }, false);
 }
 fireAudio.loop = true;
-fireAudio.play();
+
 
 
 
@@ -45,6 +49,10 @@ function startGame(){
 }
 
 function showTextNode(textNodeIndex){
+    if(state.sword){
+        document.getElementById("sword").hidden=false;
+
+    }
     const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
     textElement.innerText = textNode.text
     while(optionButtonsElement.firstChild){
@@ -72,9 +80,11 @@ function selectOption(option){
     if(nextTextnodeId <= 0){
         return startGame()
     }
-     stat = Object.assign(state, option.setState)
+     Object.assign(state, option.setState)
     showTextNode(nextTextnodeId)
 }
+
+
 const textNodes = [
     {
         id:1,
@@ -89,7 +99,7 @@ const textNodes = [
             },
             {
                 text: "I am looking for someone who wants a really cool job!",
-                setState: {blueGooo: false},
+                setState: {blueGoo: false},
                 nextText: 3
             },
 
@@ -110,6 +120,11 @@ const textNodes = [
             {
                 text: "Yes!\n[Trade your boss for a sword]",
                 setState: {sword: true},
+
+
+
+
+
                 nextText: 5
             },
             {
