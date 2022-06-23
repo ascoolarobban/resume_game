@@ -107,7 +107,7 @@ const textNodes = [
     },
     {
         id:2,
-        text: 'Oh that is fine, not all who wonder is a loss, tell me this stranger, do you happen to know a boss? ',
+        text: 'Oh that is fine, not all who wonder is at loss, tell me this stranger, do you happen to know a boss? ',
 
 
         options: [
@@ -120,11 +120,6 @@ const textNodes = [
             {
                 text: "Yes!\n[Trade your boss for a sword]",
                 setState: {sword: true},
-
-
-
-
-
                 nextText: 5
             },
             {
@@ -136,10 +131,9 @@ const textNodes = [
     },
     {
         id:3,
-        text: 'Oh how fortunate! Because if you like what you see ' +
-
+        text: 'Well there wanderer, you are in luck. \nBecause if you like what you see ' +
             'this will sound pretty wild.\n' +
-            'Because i am the creator\n' +
+            'For i am the creator\n' +
             'of this strange looking child...',
 
 
@@ -157,7 +151,25 @@ const textNodes = [
     },
     {
         id:4,
-        text: 'Monsters fucked u up good in here so you dead',
+        text: 'I studied the elders and Im getting wiser with time, for the two years i have studied, i think my time is worth a dime',
+
+
+        options: [
+            {
+                text: "ok..im sold! I will accept your resumé",
+                nextText: 11
+            },
+            {
+                text: "I will wander off..",
+                nextText: 11
+            },
+
+        ]
+    },
+    {
+        id:5,
+        text: 'Introduce me friend, and Im in debt. I favour companios and will never be a threat\n'
+        +'The sword you have, will save you in a darker place, summon your boss, fingers crossed I\'ll see you at your workplace',
 
 
         options: [
@@ -169,8 +181,8 @@ const textNodes = [
         ]
     },
     {
-        id:5,
-        text: 'Monsters fucked u up good in here so you dead',
+        id:11,
+        text: 'If you stumble upon a boss in the far and distant wild, tell him my name, and i will show him how this was styled',
 
 
         options: [
@@ -180,7 +192,7 @@ const textNodes = [
             },
 
         ]
-    }
+    },
 ]
 
 startGame()
