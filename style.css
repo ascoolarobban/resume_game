@@ -14,7 +14,7 @@ body {background-color: #1e1d1d;}
     .container{
         display: flex;
         margin: auto;
-        width: 40%;
+        width: 100%;
     }
 
 }
