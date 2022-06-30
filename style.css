@@ -238,7 +238,7 @@ background-color: transparent;
 
 @media (max-width: 800px) {
     .super-container,.container{
-        width: 100%;
+        width: 200%;
     }
 }
 
