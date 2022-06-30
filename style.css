@@ -237,7 +237,7 @@ background-color: transparent;
 }
 
 @media (max-width: 800px) {
-    .column {
+    .super-container{
         width: 100%;
     }
 }
