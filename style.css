@@ -242,7 +242,16 @@ background-color: transparent;
 }
 
 @media (max-width: 600px) {
-    .super-container,.container{
+    .btn3{
+        position: center;
+        max-width: 80px;
+        border-radius: 0px;
+        padding: 5px 10px;
+        border: 1px solid hsl(0, 0%, 21%);
+
+        color: gray;
+    }
+    .super-container,.container,.btn3{
         margin: auto;
         width: 90%;
     }
